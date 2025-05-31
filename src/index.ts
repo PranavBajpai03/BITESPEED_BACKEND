@@ -12,7 +12,6 @@ app.listen(PORT, async () => {
   const db = await openDb();
 
   db.exec(`
-    DROP TABLE IF EXISTS Contact;
     CREATE TABLE IF NOT EXISTS Contact (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       phoneNumber TEXT,
